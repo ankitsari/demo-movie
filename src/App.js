@@ -54,6 +54,8 @@ class App extends Component {
         });
         return (
           <div className="App">
+              <div className="topDot" >
+              </div>
             <Timeline orientation="right">
               {
                   movieList.map((movie, i) => {
@@ -64,6 +66,8 @@ class App extends Component {
                               icon={<i className = {movie.icon}/>}
                               iconColor={movie.color}
                           >
+                              <div className="dotLine" >
+                              </div>
                               <div>
                                   <label>Release Date:</label>
                                   <span> {movie.ReleaseDate}</span>
